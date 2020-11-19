@@ -7,20 +7,23 @@ class Home extends StatelessWidget {
   getEventos() {
     return Container(
       width: double.infinity,
-      height: 260,
+      height: 600,
       color: Colors.white,
       margin: const EdgeInsets.only(top: 10),
       child: Column(
         children: [
           Container(
             width: double.infinity,
-            height:210,  
-            child: Image.asset("image/empreendedorismo-capa.jpg"),          
+            height:550,
+            child: Image.network(
+              "https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+               fit: BoxFit.cover,
+            ),
           ),
           Container(
             width: double.infinity,
             height: 50,
-            color: Color.fromARGB(255,220, 222, 222),                    
+            color: Colors.white,
           )
         ],
       ),
@@ -30,13 +33,16 @@ class Home extends StatelessWidget {
   build(context) {
     return MaterialApp(
       home: Scaffold(
-          backgroundColor: Color.fromRGBO(206, 230, 204, 0.9),
+          backgroundColor: Color.fromARGB(255, 211, 211, 211),
           appBar: AppBar(
             leading: Icon(
               Icons.dehaze,
               size: 50,
             ),
-            backgroundColor: Colors.green,
+            backgroundColor: Color.fromARGB(255,0, 152, 252),
+          ),
+          drawer: Drawer(
+            child: Text("a"),
           ),
           body: Column(
             children: [
