@@ -51,6 +51,9 @@ flutter:
   - image/imgLogin.png 
   - image/empreendedorismo-capa.jpg
   - image/ti.png
+  - image/financeiro.png
+  - image/rh.png
+  - image/marketing.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
